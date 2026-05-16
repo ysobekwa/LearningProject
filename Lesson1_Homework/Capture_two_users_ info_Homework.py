@@ -1,20 +1,46 @@
 # Capture information for two users
 
-users = [
-    {
-        'name': 'Asa',
-        'age': 15,
-        'height': 156.2
-    },
-    {
-        'name': 'Tania',
-        'age': 20,
-        'height': 178.0
-    }
-]
-print(users)
-print (type(users))
+users = []
+name= input("please Enter name: ")
+age = int(input("please Enter age: "))
+height = float(input("please Enter height: "))
+
+# store in dictionary
+users.append ({
+    'name': name,
+    'age': age,
+    'height': height
+})
+name= input("please Enter name: ")
+age = int(input("please Enter age: "))
+height = float(input("please Enter height: "))
+
+users.append ({
+    'name': name,
+    'age': age,
+    'height': height
+})
+
+print(type(users))
 print()
+
+for user in users:
+    print(f"{user['name']} is {user['age']} years old and {user['height']} cm tall.")
+
+
+
+
+    #    'age': 15,
+        #'height': 156.2
+    #{
+     #   'name': 'Tania',
+     #   'age': 20,
+     #   'height': 178.0
+    #}
+#]
+#print(users)
+#print (type(users))
+#rint()
 
 #display users info using a loop
 
