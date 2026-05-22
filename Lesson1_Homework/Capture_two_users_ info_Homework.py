@@ -1,6 +1,6 @@
 # Capture information for two users
 #user1
-users = []
+users = [] #list
 name= str(input("please Enter name: "))
 if not name.isalpha():
     print("please enter letters only")
@@ -10,7 +10,7 @@ else:
 age = int(input("please Enter age: "))
 height = float(input("please Enter height: "))
 
-# store in dictionary
+# dictionary inside a list
 user1 = ({
     'name': name,
     'age': age,
