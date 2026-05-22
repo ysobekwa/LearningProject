@@ -1,27 +1,45 @@
 # Capture information for two users
-
+#user1
 users = []
-name= input("please Enter name: ")
+name= str(input("please Enter name: "))
+if not name.isalpha():
+    print("please enter letters only")
+else:
+    print("valid name")
+
 age = int(input("please Enter age: "))
 height = float(input("please Enter height: "))
 
 # store in dictionary
-users.append ({
+user1 = ({
     'name': name,
     'age': age,
     'height': height
 })
-name= input("please Enter name: ")
-age = int(input("please Enter age: "))
-height = float(input("please Enter height: "))
-
-users.append ({
-    'name': name,
-    'age': age,
-    'height': height
-})
-print(type(users))
+users.append(user1)
+print(type(user1))
 print()
+
+#user2
+name2= str(input("please Enter name: "))
+if not name2.isalpha():
+    print("please enter letters only")
+else:
+    print("valid name")
+
+age2 = int(input("please Enter age: "))
+height2 = float(input("please Enter height: "))
+
+# store in dictionary
+user2 = ({
+    'name': name2,
+    'age': age2,
+    'height': height2
+})
+users.append(user2)
+print(type(user2))
+print()
+
 # display each user information in as sentence using a loop
 for user in users:
     print(f"{user['name']} is {user['age']} years old and {user['height']} cm tall.")
